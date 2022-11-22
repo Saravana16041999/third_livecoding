@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Third live Coding</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      button {
+        margin: 10px;
+      }
+      input {
+        width: 200px;
+        height: 20px;
+      }
+      label {
+        margin-right: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <label id="enter"></label>
+    <input type="text" id="text" />
+    <button onclick="head1()">H1</button>
+    <button onclick="head2()">H2</button>
+    <button onclick="head3()">H3</button>
+    <script>
+      const letter = document.getElementById("enter");
+      const inputEl = document.getElementById("text");
+
+      function head1() {
+        letter.innerText = inputEl.value;
+        letter.innerHTML = `<h1>${letter.innerText}</h1>`;
+      }
+      function head2() {
+        letter.innerText = inputEl.value;
+        letter.innerHTML = `<h2>${letter.innerText}</h2>`;
+      }
+      function head3() {
+        letter.innerText = inputEl.value;
+        letter.innerHTML = `<h3>${letter.innerText}</h3>`;
+      }
+    </script>
+  </body>
+</html>
